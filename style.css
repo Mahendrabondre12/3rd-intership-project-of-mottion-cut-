@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav ul li {
+    margin: 0 20px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .product-page {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+  }
+  
+  .product-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 2px solid #ddd;
+  }
+  
+  .product-details {
+    max-width: 500px;
+    padding: 20px;
+  }
+  
+  .product-details h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+  
+  .product-details .description {
+    color: #666;
+  }
+  
+  .product-details .price {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin: 20px 0;
+  }
+  
+  button.add-to-cart {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button.add-to-cart:hover {
+    background-color: #0056b3;
+  }
+  
+  .image-gallery {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .image-gallery img {
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+  
+  .image-gallery img:hover {
+    opacity: 1;
+  }
+  
+  .reviews, .related-products {
+    margin: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .reviews .review {
+    margin-bottom: 15px;
+  }
+  
+  .reviews .rating span {
+    font-size: 1.2rem;
+    color: gold;
+  }
+  
+  .related-products {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .related-products .product {
+    text-align: center;
+    width: 200px;
+  }
+  
+  .related-products img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .product-page {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-details {
+      max-width: 90%;
+      text-align: center;
+    }
+  
+    .image-gallery {
+      justify-content: center;
+    }
+  
+    .related-products {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
