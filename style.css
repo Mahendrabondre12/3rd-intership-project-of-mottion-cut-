@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -131,7 +131,6 @@ body {
     padding: 20px 0;
   }
   
-  /* Responsive Design */
   @media screen and (max-width: 768px) {
     .product-page {
       flex-direction: column;
